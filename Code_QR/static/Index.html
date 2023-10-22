@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family: 'Dancing Script', cursive;
+            background: #29233F;
+            height: 100vh;
+            color: azure;
+        }
+        h1{
+            text-align: center;
+            padding-top: 1vw;
+            margin-bottom: 3vw;
+            font-size: 5vw;
+        }
+        .dataInput{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            border: 0;
+            padding: 0;
+            width: 60vw;
+            height: 7vw;
+            border-radius: 15px 0 0 15px;
+            background-color: #233F29;
+            color: azure;
+        }
+        button{
+            padding: 0;
+            width: 20vw;
+            height: 7vw;
+            border-radius: 0 15px 15px 0;
+            background-color: #DF6146;
+            color: azure;
+        }
+        button:hover {
+            background-color: #C3553D
+        }
+        #qrCode{
+            width:max-content;
+            margin: 2vw auto;
+            padding: 10px;
+            background-color: #e1d9d4;
+            /* background-color: #23393F; */
+        }
+    </style>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <div class="dataInput">
+        <div>
+            <input type="text" id="textInput" placeholder="Ingresa tu texto aqui..." style="font-size: 3vw;" />
+        </div>
+        <div>
+            <button id="generateQR" style="font-size: 2vw;">Generate QR Code</button>
+        </div>
+    </div>
+    <div id="qrCode"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
